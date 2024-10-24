@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: environment
+spec:
+  containers:
+  - name: nginx
+    image: nginx:1.14.2
+    ports:
+    - containerPort: 80 
+    env: 
+    - name: course
+      value: "devops"
+    - name: trainer
+      value: "siva"
+    - name: duration
+      value: "120 hrs" 
