@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: annotations-demo
   annotations:
-    imageregistry: "https://hub.docker.com/"
+    buildURL: "https://hub.docker.com/"
 spec:
   containers:
   - name: nginx
