@@ -4,7 +4,7 @@ metadata:
   name: ebs-dynamic
 spec:
   storageClassName: "expense-ebs" 
-  volumeName: ebs-dynamic   
+  #volumeName: ebs-dynamic   here we arent created volume thats why it isnt needed
   accessModes:
     - ReadWriteOnce
   resources:
