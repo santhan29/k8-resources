@@ -10,7 +10,7 @@ spec:
   csi:
     driver: ebs.csi.aws.com
     fsType: ext4
-    volumeHandle: vol-09035152cf09c4b1c
+    volumeHandle: vol-09035152cf09c4b1c  #this is the vol. id i created in aws manually 
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -33,7 +33,7 @@ metadata:
     purpose: ebs-static
 spec:
   nodeSelector:
-    topology.kubernetes.io/zone: us-east-1f 
+    topology.kubernetes.io/zone: us-east-1f  #this is the region where my node was created and here i am telling the pod to select the node which is in us-east-1f region 
   containers:
   - name: nginx
     image: nginx

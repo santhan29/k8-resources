@@ -5,6 +5,6 @@ metadata:
 provisioner: efs.csi.aws.com
 parameters:
   provisioningMode: efs-ap
-  fileSystemId: fs-09df0637e7bc78de9 
+  fileSystemId: fs-09df0637e7bc78de9  #file system wont create automatically only the mount points create automatically 
   directoryPerms: "700" 
   basePath: "/expense" 
